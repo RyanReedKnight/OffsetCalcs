@@ -18,11 +18,11 @@ Coordinate::Coordinate(const int unique_number, const double northing, const dou
 }
 Coordinate::Coordinate(const Coordinate& other)
 {
-    this->unique_number = other.unique_number;
-    this->northing = other.northing;
-    this->easting = other.easting;
-    this->elevation = other.elevation;
-    this->code = other.code;
+    this->unique_number = other.get_unique_number();
+    this->northing = other.get_northing();
+    this->easting = other.get_easting();
+    this->elevation = other.get_elevation();
+    this->code = other.get_code();
 }
 Coordinate::Coordinate()
 {
