@@ -3,6 +3,10 @@
 
 using std::string;
 
+/*
+    Methods for the Coordinate struct, see include/coordinate.hpp for more information on the struct itself.
+*/
+
 // Constructors
 Coordinate::Coordinate(const int unique_number, const double northing, const double easting, const double elevation, const string code)
 {

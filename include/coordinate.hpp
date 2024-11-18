@@ -2,6 +2,10 @@
 
 #include <string>
 
+/***
+ * Struct to represent a coordinate as it is exported from Topcon Magnet Field.
+ ***/
+
 struct Coordinate
 {
 private:
