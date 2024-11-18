@@ -2,13 +2,6 @@
 
 using std::string; using std::map;
 
-map<string, Coordinate>& get_coordinate_map() 
-{
-    static std::map<std::string, Coordinate> coordinate_map;
-    return coordinate_map;
-}
-
-
 bool coordinate_exists_in_map(map<string, Coordinate>& coordinate_map, const std::string& unique_number) 
 {
     return coordinate_map.find(unique_number) != coordinate_map.end();
