@@ -2,14 +2,14 @@
 #include <iostream>
 
 void echo(std::string message);
-std::string get_input();
+std::string read();
 void echo(std::map<std::string,Coordinate> coordinate_map);
 
 int main(void)
 {
 
     echo("Please enter the path to the file containing the coordinates:");
-    std::string file_path = get_input();
+    std::string file_path = read();
     echo("Reading coordinates from file: " + file_path);
 
     std::map<std::string,Coordinate> coordinate_map;
@@ -32,7 +32,7 @@ void echo(std::string message)
 }
 
 
-std::string get_input()
+std::string read()
 {
     std::string input;
     std::cin >> input;
